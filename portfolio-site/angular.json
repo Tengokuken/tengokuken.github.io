@@ -26,7 +26,9 @@
             "styles": [
               "src/styles.css"
             ],
-            "scripts": []
+            "scripts": [
+              "https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"
+            ]
           },
           "configurations": {
             "production": {
