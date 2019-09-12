@@ -1,4 +1,36 @@
 <h1>contact me</h1>
 
-<p>Have any questions? Suggestions on how I can improve on the site? Please let me know and I will try to get back to you as soon as possible.</p>
+<p>Have any questions? Suggestions on how I can improve on the site?
+   Please let me know and I will try to get back to you as soon as possible.</p>
 
+<form [formGroup]="messageForm" (ngSubmit)="onSubmit()">
+
+    <h5 *ngIf="success">Your form is valid!</h5>
+    <label>
+      Name:
+      <input type="text" formControlName="name">
+      <div *ngIf="submitted && messageForm.controls['name'].errors" class="error">
+        <div *ngIf="messageForm.controls['name'].errors.required">Your name is required</div>
+      </div>
+    </label>
+
+    <label>
+      Email:
+      <input type="text" formControlName="email" ngModel email>
+      <div *ngIf="submitted && messageForm.controls['email'].errors" class="error">
+        <div *ngIf="messageForm.controls['email'].errors.required">Your email is required</div>
+        <div *ngIf="messageForm.controls['email'].errors.email">Enter a valid email</div>
+      </div>
+    </label>
+
+    <label>
+      Message:
+      <textarea formControlName="message"></textarea>
+      <div *ngIf="submitted && messageForm.controls['message'].errors" class="error">
+        <div *ngIf="messageForm.controls['message'].errors.required">A message is required</div>
+      </div>
+    </label>
+
+    <input type="submit" value="Send message" class="cta">
+
+  </form>
