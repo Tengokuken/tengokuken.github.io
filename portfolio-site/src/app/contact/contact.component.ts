@@ -28,5 +28,4 @@ export class ContactComponent implements OnInit {
     }
     this.success = true;
   }
-
 }

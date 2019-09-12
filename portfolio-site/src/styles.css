@@ -143,3 +143,23 @@ section {
 @media screen and (max-width: 500px) {
   main#home h1 {
     margin-top: 10vh; } }
+
+#return_to_top {
+  background-color: rgb(39, 39, 39);
+  position: fixed;
+  color: white;
+  text-align: center;
+  height: 50px;
+
+  display: none; /* Hidden by default */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  color: white; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 15px; /* Some padding */
+  border-radius: 10px; /* Rounded corners */
+  font-size: 18px; /* Increase font size */
+}
