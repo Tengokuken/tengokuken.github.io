@@ -1,0 +1,8 @@
+.about {
+  background: gainsboro;
+  border-bottom: lightblue 5px solid;
+  border-top: lightblue 5px solid;
+  padding: 10px;
+  font-size: 20px;
+  width: 60%;
+}
