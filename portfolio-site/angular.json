@@ -26,8 +26,7 @@
             "styles": [
               "src/styles.css"
             ],
-            "scripts": [
-            ]
+            "scripts": []
           },
           "configurations": {
             "production": {
@@ -119,8 +118,13 @@
               "devServerTarget": "portfolio-site:serve:production"
             }
           }
+        },
+        "deploy": {
+          "builder": "angular-cli-ghpages:deploy",
+          "options": {}
         }
       }
-    }},
+    }
+  },
   "defaultProject": "portfolio-site"
 }
