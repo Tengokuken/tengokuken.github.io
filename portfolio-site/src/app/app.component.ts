@@ -1,4 +1,5 @@
 import { Component, HostListener } from '@angular/core';
+import { Router,NavigationEnd } from '@angular/router';
 
 @Component({
   selector: 'app-root',
@@ -6,6 +7,15 @@ import { Component, HostListener } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+  constructor(
+    private router: Router
+  ) {
+    this.router.events.subscribe((e) => {
+      if (e instanceof NavigationEnd) {
+        // TODO: make it so when you click a link, it underlines it as the current one.
+      }
+    });
+  }
   // title = 'Johnson\'s Portfolio Website';
   title = 'test';
   // TODO: Move these functions into a service.
@@ -23,4 +33,6 @@ export class AppComponent {
     document.body.scrollTop = 0; // For Safari
     document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
   }
+
+  links = ['Home', 'About Me', 'Projects', 'Contact Me'];
 }
