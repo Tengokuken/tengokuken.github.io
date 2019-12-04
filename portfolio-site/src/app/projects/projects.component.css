@@ -6,9 +6,10 @@
   grid-gap: 30px;
   grid-template-areas: "img desc desc";
   margin-block-end: 2rem;
-  background: gainsboro;
+  /* TODO: make it have a border around the projects*/
+  /* background: gainsboro;
   border-bottom: lightblue 5px solid;
-  border-top: lightblue 5px solid;
+  border-top: lightblue 5px solid; */
   width: 90%
 }
 
@@ -29,5 +30,5 @@
 }
 
 .text-secondary {
-  color: black;
+  color: white;
 }
