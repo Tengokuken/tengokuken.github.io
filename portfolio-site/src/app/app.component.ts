@@ -16,8 +16,8 @@ export class AppComponent {
       }
     });
   }
-  // title = 'Johnson\'s Portfolio Website';
-  title = 'test';
+  title = 'Johnson Zhong\'s Portfolio Website';
+  // title = 'test';
   // TODO: Move these functions into a service.
   // When the user scrolls down 20px from the top of the document, show the button
   @HostListener('window:scroll') onScroll() {
