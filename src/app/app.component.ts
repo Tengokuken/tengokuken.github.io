@@ -16,7 +16,7 @@ export class AppComponent {
       }
     });
   }
-  title = 'Johnson Zhong\'s Portfolio Website';
+  // title = 'Johnson Zhong\'s Portfolio Website';
   // title = 'test';
   // TODO: Move these functions into a service.
   // When the user scrolls down 20px from the top of the document, show the button

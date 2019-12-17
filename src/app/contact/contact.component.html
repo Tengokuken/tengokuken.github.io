@@ -1,11 +1,11 @@
-<h1>contact me</h1>
-
+<!-- <h1>contact me</h1> -->
+<h1>Contact</h1>
+<p>You can contact me directly through my email at <b>johnsonz8642@gmail.com</b>. I will be happy to listen and respond.</p>
 <p>Have any questions? Suggestions on how I can improve on the site?
    Please let me know and I will try to get back to you as soon as possible.</p>
 
 <form [formGroup]="messageForm" (ngSubmit)="onSubmit()">
 
-    <h5 *ngIf="success">Your form is valid!</h5>
     <label>
       Name:
       <input type="text" formControlName="name">
@@ -32,5 +32,6 @@
     </label>
 
     <input type="submit" value="Send message" class="cta">
+    <h5 class="success" *ngIf="success">Your message was sent!</h5>
 
   </form>
